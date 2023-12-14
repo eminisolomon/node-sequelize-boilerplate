@@ -27,7 +27,7 @@ jobs:
           server: ${{ secrets.HOST }}
           username: ${{ secrets.HOST_FTP_USER }}
           password: ${{ secrets.HOST_FTP_PASSWORD }}
-          server-dir: './api.project.com/public/'
+          server-dir: "./api.project.com/public/"
 
       - name: Installing Script
         uses: appleboy/ssh-action@master

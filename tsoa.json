@@ -1,9 +1,7 @@
 {
   "entryFile": "src/app.ts",
   "noImplicitAdditionalProperties": "throw-on-extras",
-  "controllerPathGlobs": [
-    "src/controllers/**/*.ts"
-  ],
+  "controllerPathGlobs": ["src/controllers/**/*.ts"],
   "spec": {
     "version": "1.0.1",
     "outputDirectory": ".",
@@ -30,10 +28,7 @@
         "description": "Authentication operations"
       }
     ],
-    "schemes": [
-      "http",
-      "https"
-    ],
+    "schemes": ["http", "https"],
     "spec": {
       "info": {
         "title": "Project Title",
@@ -51,29 +46,19 @@
           "variables": {
             "port": {
               "default": "5005",
-              "enum": [
-                "5005"
-              ]
+              "enum": ["5005"]
             },
             "host": {
               "default": "localhost",
-              "enum": [
-                "localhost"
-              ]
+              "enum": ["localhost"]
             },
             "protocol": {
               "default": "http",
-              "enum": [
-                "http",
-                "https"
-              ]
+              "enum": ["http", "https"]
             },
             "basePath": {
               "default": "/",
-              "enum": [
-                "/",
-                "/v1"
-              ]
+              "enum": ["/", "/v1"]
             }
           }
         }
