@@ -1,6 +1,6 @@
 import { StatusCodes } from "http-status-codes";
 import { NextFunction, Request, Response } from "express";
-import { respond, vague } from "../../utils/response";
+import { respond, vague } from "../../core/utils/response";
 import Joi from "joi";
 
 export function validateWithJoi<T>(schema: Joi.Schema<T>) {

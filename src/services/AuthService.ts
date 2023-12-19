@@ -5,7 +5,7 @@ import NotFoundException from "../exceptions/NotFoundException";
 import { generateAuthorization } from "../helpers/auth.helper";
 import Session from "../models/Session";
 import { verifyToken } from "../helpers/token.helper";
-import config from "../config";
+import config from "../core/config";
 import {
   CreateTokenPayload,
   DoEmailVerificationPayload,

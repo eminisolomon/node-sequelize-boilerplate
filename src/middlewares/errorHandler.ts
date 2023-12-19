@@ -1,8 +1,8 @@
 import { type NextFunction, type Request, type Response } from "express";
 import { StatusCodes } from "http-status-codes";
-import logger from "../utils/logger";
+import logger from "../core/utils/logger";
 import type HttpException from "../exceptions/HttpException";
-import { respond, vague } from "../utils/response";
+import { respond, vague } from "../core/utils/response";
 
 /**
  * @method  errorMiddleware

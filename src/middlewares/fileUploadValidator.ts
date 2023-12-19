@@ -1,6 +1,6 @@
 import { type NextFunction, type Request, type Response } from "express";
 import { StatusCodes } from "http-status-codes";
-import { respond } from "../utils/response";
+import { respond } from "../core/utils/response";
 
 export function fileUploadValidator(key = "file") {
   return (req: Request, res: Response, next: NextFunction) => {

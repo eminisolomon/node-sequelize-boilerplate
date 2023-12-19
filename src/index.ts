@@ -6,7 +6,7 @@ import { onShutdown } from "node-graceful-shutdown";
 import { app } from "./app";
 import { sequelize } from "./sequelize";
 import FeatureFlag from "./fflag";
-import config from "./config";
+import config from "./core/config";
 
 const server = createServer(app);
 

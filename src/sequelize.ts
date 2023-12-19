@@ -1,5 +1,5 @@
 import { Sequelize, type Options } from "@sequelize/core";
-import config from "./config";
+import config from "./core/config";
 import { User } from "./models/User";
 import Verifier from "./models/Verifier";
 import Secret from "./models/Secret";

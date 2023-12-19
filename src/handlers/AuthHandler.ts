@@ -1,5 +1,5 @@
 import { NextFunction, Request, Response } from "express";
-import { respond } from "../utils/response";
+import { respond } from "../core/utils/response";
 import AuthController from "../controllers/AuthController";
 import {
   CreateTokenPayload,

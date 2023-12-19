@@ -1,4 +1,4 @@
-import config from "../config";
+import config from "../core/config";
 import { type User } from "../models/User";
 import Session from "../models/Session";
 import { generateToken } from "./token.helper";

@@ -1,6 +1,6 @@
 import { createTransport } from "nodemailer";
-import config from "../config";
-import logger from "../utils/logger";
+import config from "../core/config";
+import logger from "../core/utils/logger";
 
 const smtpUser = config.smtp.user || "user";
 const smtpPass = config.smtp.pass || "pass";

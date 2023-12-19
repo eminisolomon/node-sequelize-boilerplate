@@ -16,7 +16,10 @@ import {
 
 import { User } from "./User";
 import { ulid } from "ulid";
-import { generateRandomNumber, generateRandomString } from "../utils/random";
+import {
+  generateRandomNumber,
+  generateRandomString,
+} from "../core/utils/random";
 
 export type IResetAttributes = InferAttributes<Verifier>;
 

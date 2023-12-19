@@ -1,5 +1,5 @@
 import { Route, Post, Body, SuccessResponse, Tags, Inject } from "tsoa";
-import { success } from "../utils/response";
+import { success } from "../core/utils/response";
 import AuthService from "../services/AuthService";
 import {
   CreateTokenPayload,

@@ -8,7 +8,7 @@ import methodOverride from "method-override";
 import morgan from "morgan";
 import { routerBase } from "./routes";
 import errorMiddleware from "./middlewares/errorHandler";
-import config from "./config";
+import config from "./core/config";
 
 export const app = express();
 app.use("/public", express.static(config.dir.public));

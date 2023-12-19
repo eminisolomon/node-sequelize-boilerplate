@@ -4,7 +4,7 @@ import { resolve } from "path";
 import { type Express } from "express";
 import multer from "multer";
 import slugify from "slugify";
-import config from "../config";
+import config from "../core/config";
 export const storageRoot = resolve("./public");
 export const storageWebsite = `https://${config.app.baseUrl}/public`;
 export const tempStorageLocation = "temp";
