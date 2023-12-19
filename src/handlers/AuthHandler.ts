@@ -4,7 +4,7 @@ import AuthController from "../controllers/AuthController";
 import {
   CreateTokenPayload,
   RefreshTokenPayload,
-} from "../types/authorization";
+} from "../interfaces/authorization";
 
 export default class AuthHandler {
   public static async handleCreateSession(

@@ -3,9 +3,9 @@ import { generateAuthorization } from "../helpers/auth.helper";
 import {
   type CreateUserPayload,
   type IUserCreationAttributes,
-} from "../types/user";
+} from "../interfaces/user";
 import { sequelize } from "../sequelize";
-import NotFoundException from "../exceptions/http/NotFoundException";
+import NotFoundException from "../exceptions/NotFoundException";
 
 export default class UserService {
   public static async createNewUser(requestBody: CreateUserPayload) {

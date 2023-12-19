@@ -1,7 +1,7 @@
 import { type NextFunction, type Request, type Response } from "express";
 import { StatusCodes } from "http-status-codes";
-import logger from "../internal/logger";
-import type HttpException from "../exceptions/http/HttpException";
+import logger from "../utils/logger";
+import type HttpException from "../exceptions/HttpException";
 import { respond, vague } from "../utils/response";
 
 /**

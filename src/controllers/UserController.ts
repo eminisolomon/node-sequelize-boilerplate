@@ -1,6 +1,6 @@
 import { Route, Post, Body, SuccessResponse, Tags, Get, Path } from "tsoa";
 import UserService from "../services/UserService";
-import { CreateUserPayload } from "../types/user";
+import { CreateUserPayload } from "../interfaces/user";
 import { success } from "../utils/response";
 
 @Route("/users")

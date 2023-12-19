@@ -1,7 +1,7 @@
 import { type NextFunction, type Request, type Response } from "express";
-import ForbiddenException from "../exceptions/http/ForbiddenException";
-import UnauthorizedException from "../exceptions/http/UnauthorizedException";
-import { AuthorizedUser } from "../types/authorization";
+import ForbiddenException from "../exceptions/ForbiddenException";
+import UnauthorizedException from "../exceptions/UnauthorizedException";
+import { AuthorizedUser } from "../interfaces/authorization";
 
 export default function requirePermission(clearance = 1) {
   return (req: Request, res: Response, next: NextFunction) => {

@@ -3,7 +3,7 @@ import { type User } from "../models/User";
 import Session from "../models/Session";
 import { generateToken } from "./token.helper";
 import { DateTime } from "luxon";
-import { AuthorizedUser } from "../types/authorization";
+import { AuthorizedUser } from "../interfaces/authorization";
 import { TokenType } from "../enums/token";
 
 export async function generateAuthorization(

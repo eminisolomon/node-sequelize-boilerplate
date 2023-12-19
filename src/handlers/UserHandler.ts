@@ -1,7 +1,7 @@
 import { NextFunction, Request, Response } from "express";
 import UserController from "../controllers/UserController";
 import { respond } from "../utils/response";
-import { CreateUserPayload } from "../types/user";
+import { CreateUserPayload } from "../interfaces/user";
 
 class UserHandler {
   public static async handleCreateUser(

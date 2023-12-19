@@ -1,7 +1,7 @@
 import { type NextFunction, type Request, type Response } from "express";
 import { verifyToken } from "../helpers/token.helper";
 import config from "../config";
-import logger from "../internal/logger";
+import logger from "../utils/logger";
 
 export function decryptAuthorization(
   req: Request,

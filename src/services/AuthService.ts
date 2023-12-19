@@ -1,7 +1,7 @@
 import bcrypt from "bcrypt";
 import { User } from "../models/User";
-import ConflictException from "../exceptions/http/ConflictException";
-import NotFoundException from "../exceptions/http/NotFoundException";
+import ConflictException from "../exceptions/ConflictException";
+import NotFoundException from "../exceptions/NotFoundException";
 import { generateAuthorization } from "../helpers/auth.helper";
 import Session from "../models/Session";
 import { verifyToken } from "../helpers/token.helper";
@@ -10,11 +10,11 @@ import {
   CreateTokenPayload,
   DoEmailVerificationPayload,
   RefreshedUser,
-} from "../types/authorization";
+} from "../interfaces/authorization";
 import { sendEmailMessage } from "../helpers/email.helper";
 import { verifyUserTemplate } from "../emails/auth.email";
 import Verifier from "../models/Verifier";
-import BadRequestException from "../exceptions/http/BadRequestException";
+import BadRequestException from "../exceptions/BadRequestException";
 
 export default class AuthService {
   public static async createSession(requestBody: CreateTokenPayload) {

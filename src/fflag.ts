@@ -1,7 +1,7 @@
 import { Unleash } from "unleash-client";
 import Features from "./enums/features";
 import config from "./config";
-import logger from "./internal/logger";
+import logger from "./utils/logger";
 
 const unleash = Unleash.getInstance({
   url: config.unleash.url,

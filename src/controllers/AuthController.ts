@@ -5,7 +5,7 @@ import {
   CreateTokenPayload,
   DoEmailVerificationPayload,
   RefreshTokenPayload,
-} from "../types/authorization";
+} from "../interfaces/authorization";
 
 @Route("/auths")
 @Tags("Auth")
