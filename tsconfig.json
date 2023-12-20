@@ -21,19 +21,6 @@
     "resolveJsonModule": true,
     "typeRoots": ["node_modules/@types", "src/interfaces"]
   },
-  "baseUrl": "src",
-  "paths": {
-    "@/*": ["*"],
-    "@core/*": ["core/*"],
-    "@controllers/*": ["controllers/*"],
-    "@enums/*": ["enums/*"],
-    "@dtos/*": ["dtos/*"],
-    "@interfaces/*": ["interfaces/*"],
-    "@middlewares/*": ["middlewares/*"],
-    "@models/*": ["models/*"],
-    "@routes/*": ["routes/*"],
-    "@services/*": ["services/*"]
-  },
   "include": ["src/**/*"],
   "exclude": ["node_modules"]
 }

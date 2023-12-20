@@ -1,5 +1,5 @@
 import { type NextFunction, type Request, type Response } from "express";
-import { verifyToken } from "../helpers/token.helper";
+import { verifyToken } from "../core/helpers/token.helper";
 import config from "../core/config";
 import logger from "../core/utils/logger";
 

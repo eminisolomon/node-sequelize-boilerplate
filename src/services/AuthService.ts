@@ -2,16 +2,16 @@ import bcrypt from "bcrypt";
 import { User } from "../models/User";
 import ConflictException from "../exceptions/ConflictException";
 import NotFoundException from "../exceptions/NotFoundException";
-import { generateAuthorization } from "../helpers/auth.helper";
+import { generateAuthorization } from "../core/helpers/auth.helper";
 import Session from "../models/Session";
-import { verifyToken } from "../helpers/token.helper";
+import { verifyToken } from "../core/helpers/token.helper";
 import config from "../core/config";
 import {
   CreateTokenPayload,
   DoEmailVerificationPayload,
   RefreshedUser,
 } from "../interfaces/authorization";
-import { sendEmailMessage } from "../helpers/email.helper";
+import { sendEmailMessage } from "../core/helpers/email.helper";
 import { verifyUserTemplate } from "../emails/auth.email";
 import Verifier from "../models/Verifier";
 import BadRequestException from "../exceptions/BadRequestException";
