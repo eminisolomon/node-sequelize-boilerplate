@@ -11,7 +11,7 @@ export function validateWithJoi<T>(schema: Joi.Schema<T>) {
       console.log(e);
       const error = e as Joi.ValidationError;
       const errors: Record<string, string> = {};
-      error.details.forEach((err) => {
+      error.details.forEach(err => {
         errors[err.context?.key as string] = err.message;
       });
       respond(

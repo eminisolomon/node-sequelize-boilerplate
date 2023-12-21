@@ -2,7 +2,7 @@ import express from "express";
 import UserHandler from "../../handlers/UserHandler";
 import { validateWithJoi } from "../../middlewares/validator";
 import { USER_CREATION_SCHEMA } from "../../middlewares/validator/user.validations";
-import requirePermission from "../../middlewares/permission";
+import requirePermission from "../../middlewares/permission.middleware";
 
 const router = express.Router();
 

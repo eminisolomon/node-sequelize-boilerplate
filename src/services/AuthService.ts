@@ -12,7 +12,7 @@ import {
   RefreshedUser,
 } from "../interfaces/authorization";
 import { sendEmailMessage } from "../core/helpers/email.helper";
-import { verifyUserTemplate } from "../emails/auth.email";
+import { verifyUserTemplate } from "../core/emails/auth.email";
 import Verifier from "../models/Verifier";
 import BadRequestException from "../exceptions/BadRequestException";
 

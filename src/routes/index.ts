@@ -1,5 +1,5 @@
 import express, { type Router } from "express";
-import { decryptAuthorization } from "../middlewares/decryptAuthorization";
+import { decryptAuthorization } from "../middlewares/auth.middleware";
 import { routerDocs } from "./docs";
 import { routerVersion1 } from "./v1.routes";
 import NotFoundException from "../exceptions/NotFoundException";

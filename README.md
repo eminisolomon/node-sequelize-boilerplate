@@ -1,12 +1,6 @@
 # Documentation
 
-The PROJECT API is the API of [PROJECT API](https://example.com)
-
-## Author 🚀
-
-> [@eminisolomon](https://github.com/eminisolomon)
-
----
+The PROJECT API Boilerplate
 
 ## Technologies
 
@@ -22,35 +16,6 @@ The PROJECT API is the API of [PROJECT API](https://example.com)
 ## Database
 
 - [Mysql](https://www.mysql.org/)
-
----
-
-## Install NodeJS
-
-To Install NodeJS, kindly go to [Nodejs](https://nodejs.com) and follow the necessary instructions required depending on
-your PC Operating System
-
-## MACOS
-
-using a [package](https://nodejs.org/en/#download) simply download the installer
-
-using [homebrew](https://github.com/Homebrew/legacy-homebrew)
-
-```markdown
-brew install node
-```
-
----
-
-## Windows
-
-using a [package](https://nodejs.org/en/#download) simply download the installer
-
-using [chocolatey](http://chocolatey.org/) to install Node
-
-```markdown
-cinst nodejs
-```
 
 ---
 
@@ -109,7 +74,3 @@ yarn add
   - ```markdown
     npm run test
     ```
-
----
-
-## Development

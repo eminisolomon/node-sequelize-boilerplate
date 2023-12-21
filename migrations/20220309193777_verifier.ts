@@ -6,7 +6,7 @@ enum Source {
   Auth = "auth",
 }
 export async function up(knex: Knex): Promise<void> {
-  await knex.schema.createTableIfNotExists("verifier", (table) => {
+  await knex.schema.createTableIfNotExists("verifier", table => {
     table.string("id", 26).primary();
     table.string("user_id", 26).references("user.id").onDelete("CASCADE");
     table.enum("source", Object.values(Source)).notNullable();

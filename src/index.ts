@@ -20,7 +20,7 @@ void (async () => {
 
 onShutdown(async () => {
   console.log("Closing http server.");
-  await new Promise((resolve) => {
+  await new Promise(resolve => {
     server.close(resolve);
   });
   console.log("Closing Database connection.");

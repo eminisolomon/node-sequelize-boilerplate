@@ -5,7 +5,7 @@ import {
   AUTH_DO_EMAIL_VERIFICATION_SCHEMA,
   AUTH_SESSION_CREATION_SCHEMA,
 } from "../../middlewares/validator/auth.validations";
-import requirePermission from "../../middlewares/permission";
+import requirePermission from "../../middlewares/permission.middleware";
 
 const router = express.Router();
 

@@ -1,7 +1,7 @@
 import { Knex } from "knex";
 
 export async function up(knex: Knex): Promise<void> {
-  await knex.schema.createTableIfNotExists("session", (table) => {
+  await knex.schema.createTableIfNotExists("session", table => {
     table.string("id", 26).primary();
     table.string("user_id", 26).references("user.id").onDelete("CASCADE");
     table.integer("used_count").unsigned().defaultTo(0);

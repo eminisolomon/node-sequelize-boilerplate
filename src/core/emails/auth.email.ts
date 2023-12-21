@@ -2,8 +2,8 @@ import { readFileSync } from "fs";
 import { join } from "path";
 import { compile } from "ejs";
 import juice from "juice";
-import { User } from "../models/User";
-import Verifier from "../models/Verifier";
+import { User } from "../../models/User";
+import Verifier from "../../models/Verifier";
 
 const _resetPasswordTemplate = getTemplate("password.reset");
 

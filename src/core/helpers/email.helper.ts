@@ -61,7 +61,7 @@ export async function sendIndividually(
   message: string,
 ) {
   const promises: Array<Promise<void>> = [];
-  to.forEach((to) => {
+  to.forEach(to => {
     promises.push(sendEmailMessage(message, subject, to));
   });
   try {

@@ -7,7 +7,7 @@ import helmet from "helmet";
 import methodOverride from "method-override";
 import morgan from "morgan";
 import { routerBase } from "./routes";
-import errorMiddleware from "./middlewares/errorHandler";
+import errorMiddleware from "./middlewares/error.middleware";
 import config from "./core/config";
 
 export const app = express();
